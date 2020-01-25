@@ -45,9 +45,18 @@ for (let i = 0; i < evens.length; i++) {
 }
 
 //Adding colors from colors array using iD collection
-var listItems=document.getElementById('rainbow');
+// var listItems=document.getElementById('rainbow');
+// var colors = ["#C2272D", "#F8931F", "#FFFF01", "#009245", "#0193D9", "#0C04ED", "#612F90"];
+
+// for(var i = 0; i < colors.length; i ++) {
+//   listItems.children[i].style.color = colors[i];    
+// }
+
+//OR FOLLOWING WORKS SAME
+
+var listItems = document.querySelectorAll('li');
 var colors = ["#C2272D", "#F8931F", "#FFFF01", "#009245", "#0193D9", "#0C04ED", "#612F90"];
 
 for(var i = 0; i < colors.length; i ++) {
-  listItems.children[i].style.color = colors[i];    
+  listItems[i].style.color = colors[i];    
 }
